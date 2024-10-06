@@ -84,5 +84,13 @@ public class DemoDatatype {
     //--e
     --e;
     System.out.println(e);  //1
+    e=1;
+    int f = e++;
+    System.out.println(e);
+    System.out.println(f);
+    e=1;
+    f = ++e;
+    System.out.println(e);
+    System.out.println(f);    
   } 
 }

@@ -68,7 +68,7 @@ public class Exercise3 {
          monthchar = "December";
          days = 31;
      }
-     System.out.println(monthchar+"/"+year+" has "+days);
+     System.out.println(monthchar+"/"+year+" has "+days+"\n");
 
   }
   

@@ -33,7 +33,7 @@ public class Demostring1 {
 
     // startWith
     String str13 = "Diamond Hill";
-    System.out.println(str13.startsWith("a",2));  // Operand, position
+    System.out.println("startsWith: "+str13.startsWith("a",2));  // Operand, position
 
     // endsWith
     System.out.println(str13.endsWith("l"));

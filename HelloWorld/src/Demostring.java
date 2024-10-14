@@ -4,8 +4,8 @@ public class Demostring {
     String x2 = "abc";
     
     // ! equals()
-    boolean result = "hello".equals(x1);
-    boolean result1 = x2.equals("world");  
+    boolean result = "hello".equals(x1);   //<= good practice
+    boolean result1 = x2.equals("world");  //<= bad practice
     // Return type<-method signature(input parameter)
     System.out.println(result);
     System.out.println(result1);
@@ -44,5 +44,8 @@ public class Demostring {
         String con2  = "Wing ";
         String con3 = "Hong";
         System.out.println(con1.concat(con2).concat(con3).replace('H','h'));
+        // Contain
+        String fullname = con1.concat(con2).concat(con3);
+        System.out.println(fullname.contains("Hong"));
       }
 }

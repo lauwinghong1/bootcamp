@@ -73,7 +73,7 @@ public class DemoIf {
         System.out.println("The new fee: " + newFee);
 
         // String method
-        String s2 = "heLlo orld";
+        String s2 = "hello world";
         // if string value contains 'w', print "Contain w."
         // if string value contains 'w' and length>7, print "****"
         if (s2.contains("w")) {

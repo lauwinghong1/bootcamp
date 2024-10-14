@@ -52,7 +52,7 @@ public class DemoIf {
         System.out.println("Grade = " + grade4);
 
         int customerAge = 70;
-        char customerGender = 'F';
+        char customerGender = 'M';
         int basFee  = 100;
         int increment = 0;
         if (customerGender == 'M') {
@@ -64,5 +64,24 @@ public class DemoIf {
         }
         int newFee = (basFee * increment/100) + basFee;
         System.out.println("The new fee: " + newFee);
+
+        // OR, combine same result scenario
+        if (customerGender=='M' || customerGender=='F' && customerAge<=60) {
+            increment = 10;
+        } else increment = 8;
+        newFee = (basFee * increment/100) + basFee;
+        System.out.println("The new fee: " + newFee);
+
+        // String method
+        String s2 = "heLlo orld";
+        // if string value contains 'w', print "Contain w."
+        // if string value contains 'w' and length>7, print "****"
+        if (s2.contains("w")) {
+            if (s2.length()>7) {
+                System.out.println("*****");
+            } else System.out.println("Contain w");
+        } else if (s2.charAt(2) == s2.toUpperCase().charAt(2)) {
+             System.out.println("upper case");
+         }
     }
 }

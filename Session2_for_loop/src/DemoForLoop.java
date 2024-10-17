@@ -91,7 +91,7 @@ public class DemoForLoop {
           continue;   // equal to ITER (RPG code), skill the rest code and back to i++
         } 
         System.out.println(i);
-      }
+     }
 
       System.out.println();   //ln -> line break
       
@@ -125,13 +125,24 @@ public class DemoForLoop {
       //*****
       // *** 
       //  *
-      int max = 5;
+      int max = 101;
       int space = max-3;
       for (int i=1; i<=max; i+=2) {
         for (int j=1; j<=space; j++) {
           System.out.print(" ");
         }
         space = space - 1;
+        for (int k=1; k<=i; k++) {
+          System.out.print("*");  
+        }
+        System.out.println();
+      }
+      space = space + 2;
+      for (int i=max-2; i>=0; i-=2) {
+        for (int j=1; j<=space; j++) {
+          System.out.print(" ");
+        }
+        space = space + 1;
         for (int k=1; k<=i; k++) {
           System.out.print("*");  
         }

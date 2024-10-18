@@ -125,7 +125,7 @@ public class DemoForLoop {
       //*****
       // *** 
       //  *
-      int max = 101;
+      int max = 5;
       int space = max-3;
       for (int i=1; i<=max; i+=2) {
         for (int j=1; j<=space; j++) {

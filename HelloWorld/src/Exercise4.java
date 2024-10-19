@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Exercise4 {
   public static void main(String[] args) {
@@ -9,9 +9,10 @@ public class Exercise4 {
     // ** -> i = 3
     // * -> i = 4
 
-    Scanner input = new Scanner(System.in);
-    System.out.println("Enter a number : ");
-    int m = input.nextInt();
+    //Scanner input = new Scanner(System.in);
+    //System.out.println("Enter a number : ");
+    //int m = input.nextInt();
+    int m = 5;
     System.out.println();
     for (int i = 0; i<m; i++) {
       int j = m-i;
@@ -21,5 +22,6 @@ public class Exercise4 {
       System.out.print(" -> i = ");
       System.out.println(i);
     }
+    
   }
 }

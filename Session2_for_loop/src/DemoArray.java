@@ -19,7 +19,5 @@ public class DemoArray {
      System.out.println(charstring);
      System.out.println(Arrays.toString(chararray));
      System.out.println(resstr);
-
   }
-  
 }

@@ -26,8 +26,5 @@ public class Exercise5 {
     }
     System.out.println("Original string: "+original);
     System.out.println("Reversed string: "+reverse);
-
-
-    
   }
 }

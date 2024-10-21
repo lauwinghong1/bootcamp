@@ -59,5 +59,36 @@ public class Exercise5_5 {
       System.out.println(intArr[i]);
     }
     System.out.println(Arrays.toString(intArr));
+    System.out.println();
+
+    // String array
+    String[] strArr = new String[] {"Element 1", "Element 2", "Lau", "Hong"};
+    String[] strArr1 = new String[] {"a", "b", "c", "d"};
+    System.out.println(Arrays.toString(strArr1));
+    for (int i=strArr.length-1; i>=0; i--) {
+      strArr[i] = strArr1[strArr.length -1 -i];
+    }
+    System.out.println(Arrays.toString(strArr));
+
+
+    // String Array
+    String[] strarr3 = new String[] {"abc", "def", "ghi" , "xyzabc"};
+    for (int i=0; i<=strarr3.length-1; i++) {
+      System.out.println(strarr3[i]);
+      for (int j=0; j<=strarr3[i].length()-1; j++) {
+         System.out.println(strarr3[i].charAt(j));
+      }
+    }
+
+    //
+    String[] strarr4 = new String[] {"abc", "def", "ghi" , "xyzabc"};
+    String swap = "";
+    System.out.println(strarr4.length);
+    for (int i=strarr4.length-1; i>=strarr4.length/2+1; i--) {
+       swap=strarr4[i];
+       strarr4[i]=strarr4[strarr4.length-1-i];
+       strarr4[strarr4.length-1-i]=swap;
+     }
+     System.out.println(Arrays.toString(strarr4));
 }
 }

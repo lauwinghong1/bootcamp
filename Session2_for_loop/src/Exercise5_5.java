@@ -81,9 +81,9 @@ public class Exercise5_5 {
     }
 
     //
-    String[] strarr4 = new String[] {"abc", "def", "ghi" , "xyzabc"};
+    String[] strarr4 = new String[] {"abc", "def", "ghi" , "xyzabc","Java","Pyphon"};
     String swap = "";
-    System.out.println(strarr4.length);
+    System.out.println();
     for (int i=strarr4.length-1; i>=strarr4.length/2+1; i--) {
        swap=strarr4[i];
        strarr4[i]=strarr4[strarr4.length-1-i];

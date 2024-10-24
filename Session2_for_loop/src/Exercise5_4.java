@@ -19,5 +19,4 @@ public class Exercise5_4 {
     }
     System.out.println("The character " + targetChar +"' appears " + count +" times." );
   }
-  
 }

@@ -17,13 +17,11 @@ public class DemoForEach {
 
     // "aaaaaabbyabrs"
     // Find out which character appear the most number of times
-    String source = "aaaaabbyabrszzzzzzzzzz";
+    String source = "aaaaabbyabrszz";
     int[] arr10 = new int[26];
-    //System.out.println(Arrays.toString(arr10));
     for (int i=0; i<source.length(); i++) {
        arr10[source.charAt(i)-97]++;
     }
-    //System.out.println(Arrays.toString(arr10));
     int max=0;
     int index=0;
     for (int i=0; i<26; i++) {
@@ -33,7 +31,6 @@ public class DemoForEach {
         } 
     }
     index+=97;
-    char maxchar = (char)index;
-    System.out.println("The most of time of character is: " + maxchar);
+    System.out.println("The most of time of character is: " + (char)index);
   }
 }

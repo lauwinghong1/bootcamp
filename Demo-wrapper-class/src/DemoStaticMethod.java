@@ -1,7 +1,8 @@
 public class DemoStaticMethod {
-   private int name;
+   
+  private int name;                                       // defined as blueprint
 
-   public void writeln(int name){
+   public void writeln(int name){                         // defined as instance
     this.name=name;
     System.out.println("Object writeln=>" + this.name);
   }
@@ -14,13 +15,14 @@ public class DemoStaticMethod {
     System.out.println(concat("Hong", "Lau"));
     System.out.println(findMax(new int[] {1, 100}));
     System.out.println("Rantangle area: " + rectanglearea(6,7));
+    System.out.println("Lau Wing Hong " + replace("Lau Wing Hong", 'g', 'X'));
     mth01.writeln(result);
   }
 
-
+  // the below is defined as static method
   // f(x)  =y
   // y = a+b
-  public static int sum(int a, int b) {
+  public static int sum(int a, int b) {               
     return a+ b;
   }
 
@@ -45,8 +47,8 @@ public class DemoStaticMethod {
   }
 
   public static String replace(String s, char frmchr, char tochr){
-    String targetvar;
-    for (int i=1; i<s.length(); i++) {
+    String targetvar= "";
+    for (int i=0; i<s.length(); i++) {
       if (s.charAt(i) == frmchr) {
         targetvar = targetvar + tochr;
       }

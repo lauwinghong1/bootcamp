@@ -25,18 +25,18 @@ public class Supermarket {
     Order ord3 = new Order();
     ord3.setproduct(product3);
     ord3.setQuantity(3,10);
-
+   
     //System.out.println(ord1.getTotal());
     //System.out.println(ord2.getTotal());
 
     Order[] orderarr = new Order[] {ord1, ord2, ord3};
     double ordtotal = 0.0;
-    for (Order order : orderarr) {
-        System.out.println(order.getOrderNum() + " " + //
-            order.getProduct() + " " + order.getTotal());
-        ordtotal += order.getTotal();
+    //for (Order order : orderarr) {
+    for (Order arr:orderarr) {
+        System.out.println(arr.getOrderNum() + " " + //
+            arr.getProduct() + " " + arr.getTotal());
+        ordtotal += arr.getTotal();
     }
     System.out.println(ordtotal);
-
   }
 }

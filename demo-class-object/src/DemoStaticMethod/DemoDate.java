@@ -24,6 +24,11 @@ public class DemoDate {
 
     //LocalDateTime dt = LocalDateTime.of(2024,1,1,0,0,0);
     LocalDateTime aaa = LocalDateTime.of(2024,1,1,0,0,0);
-    System.out.println(aaa.getYear()); 
+    
+    LocalDate date11 = LocalDate.of (2024,1,1);
+    date11 = aaa.toLocalDate();
+    System.out.println(date11);
+    
+
   }
 }

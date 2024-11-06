@@ -19,9 +19,19 @@ public class Marksix {
        }; 
       }
       // Display marksix number in ascending order
-      for (int i=1; i<=49; i++) {
-        if (marsix[i] !=0) System.out.print(marsix[i] + " ");
+      // for (int i=1; i<=49; i++) {
+      //   if (marsix[i] !=0) System.out.print(marsix[i] + " ");
+      // }
+      System.out.println(OutSortedArr(marsix));
+  }
+
+  public static String OutSortedArr(int[] inarr){
+    String outputstring = new String("The mark six number are: ");
+    for (int array: inarr) {
+      if (array !=0) {        
+        outputstring = outputstring+" "+String.valueOf(array);
       }
-      System.out.println();
+    }
+    return(outputstring);
   }
 }

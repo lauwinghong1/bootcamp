@@ -1,13 +1,19 @@
 
 
 public class StringBox { // Simulate Stringbuild.class
-  private char[] chs;
+  private char[] chs;  // non-static & non-final -> instance variable
+
+    // static variable belongs to class
+    // final variable once being defined, the value cannot be changed (等於 const)
+    // Usual, defined as const value is presented by BLOCK LETTER
+  private static final double PI = Math.PI;   
 
   public StringBox(String s){
     this.chs = s.toCharArray();
   }
 
   public char charAt(int idx){
+    System.out.println(StringBox.PI);
     return this.chs[idx];
   }
     
@@ -28,7 +34,7 @@ public class StringBox { // Simulate Stringbuild.class
 
   public static void main(String[] args) {
     StringBox a = new StringBox("Hong1234");
-    System.err.println(a.charAt(3));
+    System.out.println(a.charAt(3));
     a.Append("Cyruslalalala");
 
   }

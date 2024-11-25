@@ -37,8 +37,8 @@ public class Cloth extends ItemMaster {
     }
 
     for (int i=0; i<10; i++){
-      System.out.println(cloth1[i].getClothProductdesc());
-      System.out.println(cloth1[i].getClothProdPrice());
+      //System.out.println(cloth1[i].getClothProductdesc());
+      //System.out.println(cloth1[i].getClothProdPrice());
      }
 
   }

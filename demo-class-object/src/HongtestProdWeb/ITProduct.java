@@ -15,16 +15,16 @@ public class ITProduct extends ItemMaster {
 
   public String getITProductdesc(){
     return "Item Class: " + this.Itemclass + "Item Name: "+ //
-           super.getItemname() + "  Description" + //
-           super.getItemDesc() + "  Year of Product: " + this.YearofProduct;
+           this.getItemname() + "  Description" + //
+           this.getItemDesc() + "  Year of Product: " + this.YearofProduct;
   }
 
   public double getITProdPrice(){
-    return super.getPrice();
+    return this.getPrice();
   }
 
   public void Chgprice(double price){
-    super.setPrice(price);
+    this.setPrice(price);
   }
     
   public static void AddITProd(ITProduct[] it1) {
@@ -33,12 +33,12 @@ public class ITProduct extends ItemMaster {
     Random ran = new Random();
     //System.out.println(ran1.nextDouble());
     for (int i=0; i<it1.length; i++){
-       it1[i] = new ITProduct("ITPRD "+i, "; IT Product "+i, ran.nextDouble(), 180, 2024);      
+       it1[i] = new ITProduct("ITPRD "+i, "; IT Product "+i, ran.nextDouble(), 180, 2020+i);      
     }
 
     for (int i=0; i<10; i++){
-      System.out.println(it1[i].getITProductdesc());
-      System.out.println(it1[i].getITProdPrice());
+      //System.out.println(it1[i].getITProductdesc());
+      //System.out.println(it1[i].getITProdPrice());
     }
   }
   

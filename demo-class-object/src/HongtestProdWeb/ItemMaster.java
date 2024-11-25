@@ -24,7 +24,6 @@ public abstract class ItemMaster {
   public double getPrice(){
      return this.Price;
    }
-
   // public abstract String getItemDesc();
   // public abstract double getPrice();
 

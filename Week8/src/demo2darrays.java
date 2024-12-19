@@ -40,6 +40,7 @@ public class demo2darrays {
 
     String[][] twoarr = new String[][]{{"a","b","c"},{"d","e","f"}};
     System.out.println(Arrays.deepToString(twoarr));
+    System.out.println(delarr.contains("Hong"));
     // String a = "hong";
     // a.toCharArray();
     // a.charAt(0)

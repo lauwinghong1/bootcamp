@@ -66,9 +66,6 @@ public class StringLinkedList {
     System.out.println(strings.toString());
     strings.remove("defddd");
     System.out.println(strings.toString());
-
-    
-
   }
   
 }

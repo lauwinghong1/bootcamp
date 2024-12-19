@@ -2,6 +2,7 @@ package Week8.src.shape;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public abstract class shape {
@@ -17,7 +18,7 @@ public abstract class shape {
   }
 
   public static void main(String[] args) {
-    List<shape> shapes = new ArrayList<>();
+    List<shape> shapes = new LinkedList<>();
     shapes.add(new Circle(12.8));
     shapes.add(new Square(20));
     shapes.add(new Square(20));

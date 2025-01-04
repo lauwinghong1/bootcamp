@@ -7,6 +7,7 @@ import java.util.List;
 public class Democheckexception {
   public static void main(String[] args) {
     Path filePath = Paths.get("abc.txt");
+    List<String> lines = null;
     // Checked Exception: compile fail
     // So, you have to "handle" (try-catch) this exception so that you can compile the program
     try {
@@ -19,14 +20,14 @@ public class Democheckexception {
     try {
       calculate(-1, 9);  // throw checked excpetion, so we have to try-catch
     } catch (BusinessException e) {
-      System.out.println(e.getMessage());
+      System.out.println("==>"+e.getMessage());
       result =-1;
     }
   }
 
-  public static int calculate(int x, int y) { // forward Exception to caller
+  public static int calculate(int x, int y) throws BusinessException { // forward Exception to caller
     if (x < 0 || y < 0) {
-      throw new BusinessException("error x and Y cannot < 0");
+      throw new BusinessException("error x and Y cannot < 0", Severity.HIGH);
     }
     return x + y;
   }

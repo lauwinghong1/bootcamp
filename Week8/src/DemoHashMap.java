@@ -23,6 +23,14 @@ public class DemoHashMap {
     for (Map.Entry<String, String> entry: hm1.entrySet()){
       System.out.println(entry.getKey() + " " + entry.getValue());
     }
+
+    for (String key:hm1.keySet()){
+      System.out.println(key);
+    }
+
+    for (String values:hm1.values()){
+      System.out.println(values);
+    }
   }
   
 }

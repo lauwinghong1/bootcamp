@@ -25,6 +25,13 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.ibm.replication.cdc</groupId>
+      <artifactId>chcclp</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/chcclp.jar</systemPath>
+    </dependency>
   </dependencies>
 
   <build>

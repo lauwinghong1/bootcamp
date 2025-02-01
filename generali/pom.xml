@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -26,23 +27,229 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.ibm.replication.cdc</groupId>
+      <groupId>com.ibm.iidr</groupId>
       <artifactId>chcclp</artifactId>
       <version>1.0</version>
       <scope>system</scope>
       <systemPath>${pom.basedir}/lib/chcclp.jar</systemPath>
     </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>api</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/api.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>comms</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/comms.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>common</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/common.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>messaging</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/messaging.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>resources</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/resources.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>online</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/online.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>jms</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/jms.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>com.ibm.icu</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/com.ibm.icu_4.4.2.v20110823.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>org.clipse.core.jobs</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/org.eclipse.core.jobs_3.5.300.v20120912-155018.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>org.eclipse.core.runtime</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/org.eclipse.core.runtime_3.8.0.v20120912-155025.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>org.eclipse.equinox.common</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>org.eclipse.osgi</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/org.eclipse.osgi_3.8.2.v20130124-134944.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>org.eclipse.ui</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/org.eclipse.ui_3.104.0.v20121024-145224.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>org.eclipse.ui.workbench</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/org.eclipse.ui.workbench_3.104.0.v20130204-164612.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>db2cmn</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/db2cmn.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>db2jcc</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/db2jcc.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>db2jcc_license_cisuz</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/db2jcc_license_cisuz.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>db2jcc_license_cu</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/db2jcc_license_cu.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>db2jcc4</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/db2jcc4.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>db2qreplapis</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/db2qreplapis.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>db2replapis</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/db2replapis.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>db2replmsgs</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/db2replmsgs.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>ibmjzos</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/ibmjzos.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>com.datamirror.ts.client.accessserver</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/com.datamirror.ts.client.accessserver_11.4.0.11147.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>com.datamirror.common.comms</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/com.datamirror.common.comms.v50_11.4.0.11147.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>com.datamirror.ts.client.resources</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/com.datamirror.ts.client.resources_11.4.0.11147.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>com.datamirror.ts.client.api</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/com.datamirror.ts.client.api_11.4.0.11147.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>com.datamirror.ts.client.help</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/com.datamirror.ts.client.help_11.4.0.11147.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.iidr</groupId>
+      <artifactId>com.datamirror.ts.client.messaging</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${pom.basedir}/lib/com.datamirror.ts.client.messaging_11.4.0.11147.jar</systemPath>
+    </dependency>
   </dependencies>
 
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to
+      parent pom) -->
       <plugins>
-        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+        <!-- clean lifecycle, see
+        https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
         </plugin>
-        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+        <!-- default lifecycle, jar packaging: see
+        https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
@@ -67,7 +274,8 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
-        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+        <!-- site lifecycle, see
+        https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>

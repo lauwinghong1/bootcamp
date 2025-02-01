@@ -10,7 +10,7 @@ public class endReplication {
 
       try {
          script.open();
-
+         
          script.execute("connect server 10.60.1.19 username Admin password abcd1234");
          script.execute("connect datastore name as400 context source");
          script.execute("connect datastore name HDVTSTDTA_DS context target");
@@ -31,6 +31,7 @@ public class endReplication {
 
          // script.execute(MessageFormat.format(mapping, new Object[] {
       } catch (EmbeddedScriptException e) {
+         System.out.println("ERROR!");
          System.out.println(e.getResultCodeAndMessage());
       } finally {
          script.close();

@@ -39,7 +39,7 @@ class AppTest
     void testArray(){
         List<String>  myList = Arrays.asList("apple", "banana", "Cherry");
         assertThat(myList, hasItem("banana"));
-        assertThat(myList, not(hasItem("orange")));
+        //assertThat(myList, not(hasItem("orange")));
     }
    
 

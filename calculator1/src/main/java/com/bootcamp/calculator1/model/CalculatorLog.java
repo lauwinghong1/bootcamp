@@ -1,4 +1,4 @@
-package com.bootcamp.calculator.calculator.model;
+package com.bootcamp.calculator1.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,10 +9,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class calculatorLog {
+public class CalculatorLog {
   private Double factor1;
   private Operand operand;
   private Double factor2;
   private Double result;
 }
-

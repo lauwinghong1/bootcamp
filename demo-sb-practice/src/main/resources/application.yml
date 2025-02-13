@@ -1,6 +1,6 @@
 server:
-  port: 8090
-
+  port: 8099
+  
 database:
   postgres: "db_2409p"
 
